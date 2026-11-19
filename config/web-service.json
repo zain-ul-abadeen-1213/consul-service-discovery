@@ -1,0 +1,15 @@
+{
+  "ID": "web1",
+  "Name": "web",
+  "Tags": ["sample", "nginx", "zaintech"],
+  "Address": "127.0.0.1",
+  "Port": 80,
+  "Check": {
+    "CheckID": "web-http-check",
+    "Name": "Web HTTP Health Check",
+    "HTTP": "http://172.17.0.1:80/",
+    "Method": "GET",
+    "Interval": "10s",
+    "Timeout": "5s"
+  }
+}
